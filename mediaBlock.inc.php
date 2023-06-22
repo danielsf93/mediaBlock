@@ -40,9 +40,9 @@ class mediaBlock extends BlockPlugin {
 	{
 		$context = Application::get()->getRequest()->getContext();
 		$contextId = ($context && $context->getId()) ? $context->getId() : CONTEXT_SITE;
-		$templateMgr->assign('campo01', $this->getSetting($contextId, 'campo01'));
-		$templateMgr->assign('campo02', $this->getSetting($contextId, 'campo02'));
-		$templateMgr->assign('campo03', $this->getSetting($contextId, 'campo03'));
+		$templateMgr->assign('link01', $this->getSetting($contextId, 'link01'));
+		$templateMgr->assign('link02', $this->getSetting($contextId, 'link02'));
+		$templateMgr->assign('link03', $this->getSetting($contextId, 'link03'));
 
 		return parent::getContents($templateMgr, $request);
 	}

@@ -19,15 +19,15 @@
                 {translate key="Bem vindo ao plugin FORM."}
             </div>
         </div>
-		{fbvFormSection title="Descrição campo01:"}
-			{fbvElement type="text" id="campo01" value=$campo01}
+		{fbvFormSection title="Descrição link01:"}
+			{fbvElement type="text" id="link01" value=$link01}
 		{/fbvFormSection}
-		{fbvFormSection title="Descrição campo02:"}
-			{fbvElement type="text" id="campo02" value=$campo02}
+		{fbvFormSection title="Descrição link02:"}
+			{fbvElement type="text" id="link02" value=$link02}
             
 		{/fbvFormSection}
-		{fbvFormSection title="Descrição campo03:"}
-			{fbvElement type="text" id="campo03" value=$campo03}
+		{fbvFormSection title="Descrição link03:"}
+			{fbvElement type="text" id="link03" value=$link03}
 		{/fbvFormSection}
     {/fbvFormArea}
     {fbvFormButtons submitText="common.save"}

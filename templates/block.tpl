@@ -1,8 +1,13 @@
 <div class="pkp_block block_mediaBlock">
 
-  <span class="campo01"><b>Campo 01:</b><br>{$campo01|unescape:"html"}</span><br><br>
-  <span class="campo02"><b>Campo 02:</b><br>{$campo02|unescape:"html"}</span><br><br>
-  <span class="campo03"><b>Campo 03:</b><br>{$campo03|unescape:"html"}</span>
+  <a href="{$link01|unescape:"html"}" target="_blank">
+    <img src="/plugins/blocks/mediaBlock/logos/twit.png" > </a><br><br>
+  
+  <a href="{$link02|unescape:"html"}" target="_blank">
+    <img src="/plugins/blocks/mediaBlock/logos/face.png" > </a><br><br>
+
+  <a href="{$link03|unescape:"html"}" target="_blank">
+    <img src="/plugins/blocks/mediaBlock/logos/inst.png" > </a>
   
 </div>
 

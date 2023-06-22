@@ -27,9 +27,9 @@ class mediaBlockSettingsForm extends Form
     	$request = Application::get()->getRequest();
 	    $context = $request->getContext();
 	    $contextId = ($context && $context->getId()) ? $context->getId() : CONTEXT_SITE;
-        $this->setData('campo01', $this->plugin->getSetting($contextId, 'campo01'));
-        $this->setData('campo02', $this->plugin->getSetting($contextId, 'campo02'));
-        $this->setData('campo03', $this->plugin->getSetting($contextId, 'campo03'));
+        $this->setData('link01', $this->plugin->getSetting($contextId, 'link01'));
+        $this->setData('link02', $this->plugin->getSetting($contextId, 'link02'));
+        $this->setData('link03', $this->plugin->getSetting($contextId, 'link03'));
 
         parent::initData();
     }
@@ -39,7 +39,7 @@ class mediaBlockSettingsForm extends Form
      */
     public function readInputData()
     {
-        $this->readUserVars(['campo01', 'campo02', 'campo03']);
+        $this->readUserVars(['link01', 'link02', 'link03']);
         parent::readInputData();
     }
 
@@ -71,9 +71,9 @@ class mediaBlockSettingsForm extends Form
 	    $request = Application::get()->getRequest();
 	    $context = $request->getContext();
 	    $contextId = ($context && $context->getId()) ? $context->getId() : CONTEXT_SITE;
-        $this->plugin->updateSetting($contextId, 'campo01', $this->getData('campo01'));
-        $this->plugin->updateSetting($contextId, 'campo02', $this->getData('campo02'));
-        $this->plugin->updateSetting($contextId, 'campo03', $this->getData('campo03'));
+        $this->plugin->updateSetting($contextId, 'link01', $this->getData('link01'));
+        $this->plugin->updateSetting($contextId, 'link02', $this->getData('link02'));
+        $this->plugin->updateSetting($contextId, 'link03', $this->getData('link03'));
         import('classes.notification.NotificationManager');
         $notificationMgr = new NotificationManager();
         $notificationMgr->createTrivialNotification(
