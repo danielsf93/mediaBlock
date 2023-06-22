@@ -16,17 +16,21 @@
     {fbvFormArea}
         <div class="pkp_notification">
             <div class="notifyWarning">
-                {translate key="Bem vindo ao plugin FORM."}
+                {translate key="Adicione os links das redes sociais de sua organização."}
             </div>
         </div>
-		{fbvFormSection title="Descrição link01:"}
+		{fbvFormSection title="Título"}
+        <p>Coloque algo como "Acesse nossas redes:", ou se desejar, deixe em branco.</p>
+			{fbvElement type="text" id="titulo" value=$titulo}
+		{/fbvFormSection}
+        {fbvFormSection title="Link do Twitter:"}
 			{fbvElement type="text" id="link01" value=$link01}
 		{/fbvFormSection}
-		{fbvFormSection title="Descrição link02:"}
+		{fbvFormSection title="Link do Facebook:"}
 			{fbvElement type="text" id="link02" value=$link02}
             
 		{/fbvFormSection}
-		{fbvFormSection title="Descrição link03:"}
+		{fbvFormSection title="Link do Instagram:"}
 			{fbvElement type="text" id="link03" value=$link03}
 		{/fbvFormSection}
     {/fbvFormArea}

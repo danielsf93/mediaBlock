@@ -27,6 +27,7 @@ class mediaBlockSettingsForm extends Form
     	$request = Application::get()->getRequest();
 	    $context = $request->getContext();
 	    $contextId = ($context && $context->getId()) ? $context->getId() : CONTEXT_SITE;
+        $this->setData('titulo', $this->plugin->getSetting($contextId, 'titulo'));
         $this->setData('link01', $this->plugin->getSetting($contextId, 'link01'));
         $this->setData('link02', $this->plugin->getSetting($contextId, 'link02'));
         $this->setData('link03', $this->plugin->getSetting($contextId, 'link03'));
@@ -39,7 +40,7 @@ class mediaBlockSettingsForm extends Form
      */
     public function readInputData()
     {
-        $this->readUserVars(['link01', 'link02', 'link03']);
+        $this->readUserVars(['titulo', 'link01', 'link02', 'link03']);
         parent::readInputData();
     }
 
@@ -71,6 +72,7 @@ class mediaBlockSettingsForm extends Form
 	    $request = Application::get()->getRequest();
 	    $context = $request->getContext();
 	    $contextId = ($context && $context->getId()) ? $context->getId() : CONTEXT_SITE;
+        $this->plugin->updateSetting($contextId, 'titulo', $this->getData('titulo'));
         $this->plugin->updateSetting($contextId, 'link01', $this->getData('link01'));
         $this->plugin->updateSetting($contextId, 'link02', $this->getData('link02'));
         $this->plugin->updateSetting($contextId, 'link03', $this->getData('link03'));
