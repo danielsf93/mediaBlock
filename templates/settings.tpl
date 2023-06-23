@@ -16,21 +16,17 @@
     {fbvFormArea}
         <div class="pkp_notification">
             <div class="notifyWarning">
-                {translate key="Adicione os links das redes sociais de sua organização."}
+                <h3>{translate key="plugins.block.mediaBlock.sett"}</h3>
             </div>
         </div>
-		{fbvFormSection title="Título"}
-        <p>Coloque algo como "Acesse nossas redes:", ou se desejar, deixe em branco.</p>
-			{fbvElement type="text" id="titulo" value=$titulo}
-		{/fbvFormSection}
-        {fbvFormSection title="Link do Twitter:"}
+        {fbvFormSection title="plugins.block.mediaBlock.twit"}
 			{fbvElement type="text" id="link01" value=$link01}
 		{/fbvFormSection}
-		{fbvFormSection title="Link do Facebook:"}
+		{fbvFormSection title="plugins.block.mediaBlock.face"}
 			{fbvElement type="text" id="link02" value=$link02}
             
 		{/fbvFormSection}
-		{fbvFormSection title="Link do Instagram:"}
+		{fbvFormSection title="plugins.block.mediaBlock.inst"}
 			{fbvElement type="text" id="link03" value=$link03}
 		{/fbvFormSection}
     {/fbvFormArea}

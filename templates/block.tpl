@@ -1,11 +1,9 @@
 <div class="pkp_block block_mediaBlock">
-    <h3>{$titulo|unescape:"html"}</h3>
-
   <a href="{$link01|unescape:"html"}" target="_blank">
-    <img src="/plugins/blocks/mediaBlock/logos/twit.png" > </a><br><br>
+    <img src="/plugins/blocks/mediaBlock/logos/twit.png" > </a><br>
   
   <a href="{$link02|unescape:"html"}" target="_blank">
-    <img src="/plugins/blocks/mediaBlock/logos/face.png" > </a><br><br>
+    <img src="/plugins/blocks/mediaBlock/logos/face.png" > </a><br>
 
   <a href="{$link03|unescape:"html"}" target="_blank">
     <img src="/plugins/blocks/mediaBlock/logos/inst.png" > </a>
